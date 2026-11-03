@@ -2,9 +2,11 @@
 
 #Entrada
 salario = float(input('Informe o salário: '))
+percentual = float(input('Informe a porcentagem de aumento: '))
 
 #Processamento
-valor_aumento = salario * 0.15
+percentual = percentual / 100
+valor_aumento = salario * percentual
 salario_reajustado = salario + valor_aumento
 
 #Saida
